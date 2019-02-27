@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.epam.com/tariffs"
+         xsi:schemaLocation="http://www.epam.com/tariffs tariffs_schema.xsd">
+
+    <invalid>INVALID DATA</invalid>
+</tariffs>

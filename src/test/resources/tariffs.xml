@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.epam.com/tariffs"
+         xsi:schemaLocation="http://www.epam.com/tariffs tariffs_schema.xsd">
+
+    <calling-tariff name="Супер max" id="AAAAAAAA">
+        <payroll>
+            <rubles>20</rubles>
+            <kopecks>0</kopecks>
+        </payroll>
+        <connecting-cost>
+            <rubles>5</rubles>
+            <kopecks>0</kopecks>
+        </connecting-cost>
+        <call-costs>
+            <call-inside-the_network>
+                <rubles>0</rubles>
+                <kopecks>0</kopecks>
+            </call-inside-the_network>
+            <call-outside-the-network>
+                <rubles>0</rubles>
+                <kopecks>0</kopecks>
+            </call-outside-the-network>
+            <call-to-favourite-number>
+                <rubles>0</rubles>
+                <kopecks>0</kopecks>
+            </call-to-favourite-number>
+        </call-costs>
+        <favorite-numbers-count>0</favorite-numbers-count>
+    </calling-tariff>
+    
+    <calling-tariff name="Пенсионный" operator="Velcom" id="AAAAAAAB">
+        <payroll>
+            <rubles>3</rubles>
+            <kopecks>70</kopecks>
+        </payroll>
+        <connecting-cost>
+            <rubles>5</rubles>
+            <kopecks>0</kopecks>
+        </connecting-cost>
+        <call-costs>
+            <call-inside-the_network>
+                <rubles>0</rubles>
+                <kopecks>5</kopecks>
+            </call-inside-the_network>
+            <call-outside-the-network>
+                <rubles>0</rubles>
+                <kopecks>17</kopecks>
+            </call-outside-the-network>
+            <call-to-favourite-number>
+                <rubles>0</rubles>
+                <kopecks>2</kopecks>
+            </call-to-favourite-number>
+        </call-costs>
+        <favorite-numbers-count>5</favorite-numbers-count>
+    </calling-tariff>
+    
+    <internet-tariff name="Бит" id="AAAAAAAC">
+        <payroll>
+            <rubles>8</rubles>
+            <kopecks>95</kopecks>
+        </payroll>
+        <connecting-cost>
+            <rubles>8</rubles>
+            <kopecks>95</kopecks>
+        </connecting-cost>
+        <starting-number-of-MB>250</starting-number-of-MB>
+        <cost-of-one-MB>
+            <rubles>0</rubles>
+            <kopecks>0</kopecks>
+        </cost-of-one-MB>
+        <speed-type>limited</speed-type>
+    </internet-tariff>
+
+    <internet-tariff name="Шейк 1" operator="Life" id="AAAAAAAD">
+        <payroll>
+            <rubles>11</rubles>
+            <kopecks>90</kopecks>
+        </payroll>
+        <connecting-cost>
+            <rubles>7</rubles>
+            <kopecks>90</kopecks>
+        </connecting-cost>
+        <starting-number-of-MB>4000</starting-number-of-MB>
+        <cost-of-one-MB>
+            <rubles>0</rubles>
+            <kopecks>0</kopecks>
+        </cost-of-one-MB>
+        <speed-type>limited</speed-type>
+    </internet-tariff>
+</tariffs>
