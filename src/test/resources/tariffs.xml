@@ -4,7 +4,7 @@
          xmlns="http://www.epam.com/tariffs"
          xsi:schemaLocation="http://www.epam.com/tariffs tariffs_schema.xsd">
 
-    <calling-tariff name="Супер max" id="AAAAAAAA">
+    <calling-tariff id="AAAAAAAA" name="Супер max">
         <payroll>
             <rubles>20</rubles>
             <kopecks>0</kopecks>
@@ -13,24 +13,22 @@
             <rubles>5</rubles>
             <kopecks>0</kopecks>
         </connecting-cost>
-        <call-costs>
-            <call-inside-the_network>
-                <rubles>0</rubles>
-                <kopecks>0</kopecks>
-            </call-inside-the_network>
-            <call-outside-the-network>
-                <rubles>0</rubles>
-                <kopecks>0</kopecks>
-            </call-outside-the-network>
-            <call-to-favourite-number>
-                <rubles>0</rubles>
-                <kopecks>0</kopecks>
-            </call-to-favourite-number>
-        </call-costs>
+        <call-inside-the-network>
+            <rubles>0</rubles>
+            <kopecks>0</kopecks>
+        </call-inside-the-network>
+        <call-outside-the-network>
+            <rubles>0</rubles>
+            <kopecks>0</kopecks>
+        </call-outside-the-network>
+        <call-to-favourite-number>
+            <rubles>0</rubles>
+            <kopecks>0</kopecks>
+        </call-to-favourite-number>
         <favorite-numbers-count>0</favorite-numbers-count>
     </calling-tariff>
     
-    <calling-tariff name="Пенсионный" operator="Velcom" id="AAAAAAAB">
+    <calling-tariff id="AAAAAAAB" name="Пенсионный" operator="Velcom">
         <payroll>
             <rubles>3</rubles>
             <kopecks>70</kopecks>
@@ -39,24 +37,22 @@
             <rubles>5</rubles>
             <kopecks>0</kopecks>
         </connecting-cost>
-        <call-costs>
-            <call-inside-the_network>
-                <rubles>0</rubles>
-                <kopecks>5</kopecks>
-            </call-inside-the_network>
-            <call-outside-the-network>
-                <rubles>0</rubles>
-                <kopecks>17</kopecks>
-            </call-outside-the-network>
-            <call-to-favourite-number>
-                <rubles>0</rubles>
-                <kopecks>2</kopecks>
-            </call-to-favourite-number>
-        </call-costs>
+        <call-inside-the-network>
+            <rubles>0</rubles>
+            <kopecks>5</kopecks>
+        </call-inside-the-network>
+        <call-outside-the-network>
+            <rubles>0</rubles>
+            <kopecks>17</kopecks>
+        </call-outside-the-network>
+        <call-to-favourite-number>
+            <rubles>0</rubles>
+            <kopecks>2</kopecks>
+        </call-to-favourite-number>
         <favorite-numbers-count>5</favorite-numbers-count>
     </calling-tariff>
     
-    <internet-tariff name="Бит" id="AAAAAAAC">
+    <internet-tariff id="AAAAAAAC" name="Бит">
         <payroll>
             <rubles>8</rubles>
             <kopecks>95</kopecks>
@@ -73,7 +69,7 @@
         <speed-type>limited</speed-type>
     </internet-tariff>
 
-    <internet-tariff name="Шейк 1" operator="Life" id="AAAAAAAD">
+    <internet-tariff id="AAAAAAAD" name="Шейк 1" operator="Life">
         <payroll>
             <rubles>11</rubles>
             <kopecks>90</kopecks>

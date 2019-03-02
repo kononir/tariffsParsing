@@ -7,7 +7,7 @@
     <element name="tariffs">
         <complexType>
             <sequence>
-                <element ref="tns:tariff" minOccurs="2" maxOccurs="unbounded"/>
+                <element ref="tns:tariff" maxOccurs="unbounded"/>
             </sequence>
         </complexType>
     </element>
@@ -43,8 +43,6 @@
             <element name="connecting-cost" type="tns:Cost"/>
         </sequence>
 
-        <attribute name="name" type="string"/>
-        <attribute name="operator" type="tns:Operator" default="MTS"/>
         <attribute name="id" use="required">
             <simpleType>
                 <restriction base="ID">
@@ -52,21 +50,17 @@
                 </restriction>
             </simpleType>
         </attribute>
-    </complexType>
-
-    <complexType name="CallCosts">
-        <sequence>
-            <element name="call-inside-the_network" type="tns:Cost"/>
-            <element name="call-outside-the-network" type="tns:Cost"/>
-            <element name="call-to-favourite-number" type="tns:Cost"/>
-        </sequence>
+        <attribute name="name" type="string"/>
+        <attribute name="operator" type="tns:Operator" default="MTS"/>
     </complexType>
 
     <complexType name="CallingTariff">
         <complexContent>
             <extension base="tns:Tariff">
                 <sequence>
-                    <element name="call-costs" type="tns:CallCosts"/>
+                    <element name="call-inside-the-network" type="tns:Cost"/>
+                    <element name="call-outside-the-network" type="tns:Cost"/>
+                    <element name="call-to-favourite-number" type="tns:Cost"/>
                     <element name="favorite-numbers-count" type="nonNegativeInteger"/>
                 </sequence>
             </extension>
