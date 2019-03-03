@@ -1,9 +1,6 @@
-package com.epam.tariffs.parsing.model.tariff;
+package com.epam.tariffs.parsing.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -12,9 +9,11 @@ import java.util.Objects;
         "kopecks"
 })
 public class Cost {
-    @XmlElement(required = true)
+    @XmlElement(namespace = "http://www.epam.com/tariffs", required = true)
+    @XmlSchemaType(name = "nonNegativeInteger")
     private int rubles;
-    @XmlElement(required = true)
+    @XmlElement(namespace = "http://www.epam.com/tariffs", required = true)
+    @XmlSchemaType(name = "nonNegativeInteger")
     private int kopecks;
 
     public Cost() {

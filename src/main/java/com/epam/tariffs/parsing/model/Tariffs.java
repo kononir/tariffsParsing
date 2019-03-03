@@ -1,4 +1,4 @@
-package com.epam.tariffs.parsing.model.tariff;
+package com.epam.tariffs.parsing.model;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.*;
@@ -9,7 +9,7 @@ import java.util.List;
 @XmlType(name = "", propOrder = {
         "tariffList"
 })
-@XmlRootElement(name = "tariffs")
+@XmlRootElement(name = "tariffs", namespace = "http://www.epam.com/tariffs")
 public class Tariffs {
     @XmlElementRef(name = "tariff", namespace = "http://www.epam.com/tariffs", type = JAXBElement.class)
     private List<JAXBElement<? extends Tariff>> tariffList;

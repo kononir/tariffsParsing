@@ -1,13 +1,10 @@
-package com.epam.tariffs.parsing.model.tariff.call;
+package com.epam.tariffs.parsing.model.call;
 
-import com.epam.tariffs.parsing.model.tariff.Cost;
-import com.epam.tariffs.parsing.model.tariff.Tariff;
-import com.epam.tariffs.parsing.model.tariff.Operator;
+import com.epam.tariffs.parsing.model.Cost;
+import com.epam.tariffs.parsing.model.Tariff;
+import com.epam.tariffs.parsing.model.Operator;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CallingTariff", propOrder = {
@@ -18,13 +15,14 @@ import javax.xml.bind.annotation.XmlType;
 })
 
 public class CallingTariff extends Tariff {
-    @XmlElement(name = "call-inside-the-network", required = true)
+    @XmlElement(name = "call-inside-the-network", namespace = "http://www.epam.com/tariffs", required = true)
     private Cost callInsideTheNetwork;
-    @XmlElement(name = "call-outside-the-network", required = true)
+    @XmlElement(name = "call-outside-the-network", namespace = "http://www.epam.com/tariffs", required = true)
     private Cost callOutsideTheNetwork;
-    @XmlElement(name = "call-to-favourite-number", required = true)
+    @XmlElement(name = "call-to-favourite-number", namespace = "http://www.epam.com/tariffs", required = true)
     private Cost callToFavoriteNumbers;
-    @XmlElement(name = "favorite-number-count", required = true)
+    @XmlElement(name = "favorite-numbers-count", namespace = "http://www.epam.com/tariffs", required = true)
+    @XmlSchemaType(name = "nonNegativeInteger")
     private int favoriteNumbersCount;
 
     public CallingTariff() {

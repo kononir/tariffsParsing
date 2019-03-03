@@ -3,7 +3,7 @@ package com.epam.tariffs.parsing.data.parsers.dom;
 import com.epam.tariffs.parsing.data.parsers.exceptions.XmlParsingException;
 import com.epam.tariffs.parsing.data.parsers.interfaces.Parser;
 import com.epam.tariffs.parsing.data.validator.exceptions.ReadingProblemsException;
-import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.Tariff;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 

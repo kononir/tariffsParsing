@@ -3,9 +3,9 @@ package com.epam.tariffs.parsing.data.parsers.jaxb;
 import com.epam.tariffs.parsing.data.schema.SchemaLoader;
 import com.epam.tariffs.parsing.data.schema.exceptions.InvalidSchemaPathException;
 import com.epam.tariffs.parsing.data.parsers.exceptions.XmlParsingException;
-import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.Tariff;
 import com.epam.tariffs.parsing.data.parsers.interfaces.Parser;
-import com.epam.tariffs.parsing.model.tariff.Tariffs;
+import com.epam.tariffs.parsing.model.Tariffs;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -26,7 +26,7 @@ public class JaxbTariffsParser implements Parser {
         List<Tariff> result;
 
         try {
-            JAXBContext jaxbContext = JAXBContext.newInstance("com.epam.tariffs.parsing.model.tariff");
+            JAXBContext jaxbContext = JAXBContext.newInstance("com.epam.tariffs.parsing.model");
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
             URL schemaPathUrl = new SchemaLoader().getSchemaUrl();

@@ -1,4 +1,4 @@
-package com.epam.tariffs.parsing.data.validator.exceptions;
+package com.epam.tariffs.parsing;
 
 public class InvalidFileToParsingException extends Exception {
     public InvalidFileToParsingException(String message) {

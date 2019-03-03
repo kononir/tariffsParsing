@@ -12,7 +12,7 @@ public class SchemaLoader {
         URL schemaPathUrl = classLoader.getResource(SCHEMA_PATH);
 
         if (schemaPathUrl == null) {
-            throw new InvalidSchemaPathException("");
+            throw new InvalidSchemaPathException("There is no xsd schema!");
         }
 
         return schemaPathUrl;

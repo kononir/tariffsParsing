@@ -7,8 +7,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class XmlValidatorImplTests {
-    private static final String PATH_OF_VALID_FILE = "src/test/resources/tariffs.xml";
-    private static final String PATH_OF_INVALID_FILE = "src/test/resources/invalid.xml";
+    private static final String TARIFFS_XML = "src/test/resources/tariffs.xml";
+    private static final String INVALID_XML = "src/test/resources/invalid.xml";
     private static final String INVALID_PATH = "Invalid path!";
 
     @Test
@@ -16,7 +16,7 @@ public class XmlValidatorImplTests {
             throws ReadingProblemsException, InvalidSchemaPathException {
         XmlValidator validator = new XmlValidatorImpl();
 
-        boolean actual = validator.validate(PATH_OF_VALID_FILE);
+        boolean actual = validator.validate(TARIFFS_XML);
 
         Assert.assertTrue(actual);
     }
@@ -26,7 +26,7 @@ public class XmlValidatorImplTests {
             throws ReadingProblemsException, InvalidSchemaPathException {
         XmlValidator validator = new XmlValidatorImpl();
 
-        boolean actual = validator.validate(PATH_OF_INVALID_FILE);
+        boolean actual = validator.validate(INVALID_XML);
 
         Assert.assertFalse(actual);
     }

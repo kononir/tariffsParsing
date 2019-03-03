@@ -6,10 +6,9 @@ import com.epam.tariffs.parsing.data.parsers.exceptions.XmlParsingException;
 import com.epam.tariffs.parsing.data.parsers.interfaces.Parser;
 import com.epam.tariffs.parsing.data.parsers.interfaces.ParserCreator;
 import com.epam.tariffs.parsing.data.schema.exceptions.InvalidSchemaPathException;
-import com.epam.tariffs.parsing.data.validator.exceptions.InvalidFileToParsingException;
 import com.epam.tariffs.parsing.data.validator.exceptions.ReadingProblemsException;
 import com.epam.tariffs.parsing.data.validator.interfaces.XmlValidator;
-import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.Tariff;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -36,9 +35,9 @@ public class Director {
             Parser parser = parserCreator.create(parserName);
 
             tariffs = parser.parse(path);
-        } catch (ReadingProblemsException | InvalidParserNameException | InvalidSchemaPathException e) {
+        } catch (ReadingProblemsException | InvalidSchemaPathException e) {
             LOGGER.fatal(e);
-        } catch (InvalidFileToParsingException | XmlParsingException e) {
+        } catch (InvalidFileToParsingException | InvalidParserNameException | XmlParsingException e) {
             LOGGER.error(e);
         }
 

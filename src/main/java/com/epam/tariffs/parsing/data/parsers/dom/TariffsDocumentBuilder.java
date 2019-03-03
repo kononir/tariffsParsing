@@ -1,12 +1,12 @@
 package com.epam.tariffs.parsing.data.parsers.dom;
 
-import com.epam.tariffs.parsing.model.tariff.Cost;
-import com.epam.tariffs.parsing.model.tariff.Operator;
-import com.epam.tariffs.parsing.model.tariff.call.CallingTariff;
-import com.epam.tariffs.parsing.model.tariff.internet.InternetTariff;
-import com.epam.tariffs.parsing.model.tariff.internet.SpeedType;
+import com.epam.tariffs.parsing.model.Cost;
+import com.epam.tariffs.parsing.model.Operator;
+import com.epam.tariffs.parsing.model.call.CallingTariff;
+import com.epam.tariffs.parsing.model.internet.InternetTariff;
+import com.epam.tariffs.parsing.model.internet.SpeedType;
 import com.epam.tariffs.parsing.util.EnumSearcher;
-import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.Tariff;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -86,7 +86,7 @@ public class TariffsDocumentBuilder {
         int startingNumberOfMB = newInt(getFirstElementByTagName(tariffElement, "starting-number-of-MB"));
         tariff.setStartingNumberOfMB(startingNumberOfMB);
 
-        String speedTypeStr = tariffElement.getAttribute("speed-type");
+        String speedTypeStr = newString(getFirstElementByTagName(tariffElement, "speed-type"));
         List<SpeedType> speedTypes = Arrays.asList(SpeedType.values());
         SpeedType speedType = new EnumSearcher<>(speedTypes).search(speedTypeStr);
         tariff.setSpeedType(speedType);
@@ -98,15 +98,11 @@ public class TariffsDocumentBuilder {
 
         String operatorStr = tariffElement.getAttribute("operator");
 
-        if (!operatorStr.isEmpty()) {
-            List<Operator> operators = Arrays.asList(Operator.values());
+        List<Operator> operators = Arrays.asList(Operator.values());
 
-            Operator operator = new EnumSearcher<>(operators).search(operatorStr);
+        Operator operator = new EnumSearcher<>(operators).search(operatorStr);
 
-            tariff.setOperator(operator);
-        } else {
-            tariff.setOperator(Operator.MTS);
-        }
+        tariff.setOperator(operator);
     }
 
     private void setTariffElements(Tariff tariff, Element tariffElement) {
@@ -135,6 +131,10 @@ public class TariffsDocumentBuilder {
 
     private int newInt(Element intElement) {
         return Integer.parseInt(intElement.getTextContent());
+    }
+
+    private String newString(Element stringElement) {
+        return stringElement.getTextContent();
     }
 
     private Element getFirstElementByTagName(Element element, String tagName) {

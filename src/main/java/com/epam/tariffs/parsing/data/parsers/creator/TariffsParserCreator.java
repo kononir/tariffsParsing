@@ -1,12 +1,11 @@
 package com.epam.tariffs.parsing.data.parsers.creator;
 
-import com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException;
-import com.epam.tariffs.parsing.data.parsers.jaxb.JaxbTariffsParser;
 import com.epam.tariffs.parsing.data.parsers.dom.DOMTariffsParser;
-import com.epam.tariffs.parsing.data.parsers.sax.SAXTariffsParser;
-import com.epam.tariffs.parsing.data.parsers.stax.StAXTariffsParser;
+import com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException;
 import com.epam.tariffs.parsing.data.parsers.interfaces.Parser;
 import com.epam.tariffs.parsing.data.parsers.interfaces.ParserCreator;
+import com.epam.tariffs.parsing.data.parsers.jaxb.JaxbTariffsParser;
+import com.epam.tariffs.parsing.data.parsers.sax.SAXTariffsParser;
 
 public class TariffsParserCreator implements ParserCreator {
 
@@ -27,9 +26,6 @@ public class TariffsParserCreator implements ParserCreator {
                 break;
             case JAXB:
                 result = new JaxbTariffsParser();
-                break;
-            case STAX:
-                result = new StAXTariffsParser();
                 break;
             default:
                 throw new InvalidParserNameException("Parser name is undefined!");

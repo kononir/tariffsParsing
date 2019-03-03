@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.epam.com/tariffs"
+         xsi:schemaLocation="http://www.epam.com/tariffs tariffs_schema.xsd">
+
+    <internet-tariff id="AAAAAAAD" name="Шейк 1" operator="Life">
+        <payroll>
+            <rubles>11</rubles>
+            <kopecks>90</kopecks>
+        </payroll>
+        <connecting-cost>
+            <rubles>7</rubles>
+            <kopecks>90</kopecks>
+        </connecting-cost>
+        <starting-number-of-MB>4000</starting-number-of-MB>
+        <cost-of-one-MB>
+            <rubles>0</rubles>
+            <kopecks>0</kopecks>
+        </cost-of-one-MB>
+        <speed-type>limited</speed-type>
+    </internet-tariff>
+</tariffs>
+

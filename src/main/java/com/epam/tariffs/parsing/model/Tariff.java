@@ -1,17 +1,21 @@
-package com.epam.tariffs.parsing.model.tariff;
+package com.epam.tariffs.parsing.model;
+
+import com.epam.tariffs.parsing.model.call.CallingTariff;
+import com.epam.tariffs.parsing.model.internet.InternetTariff;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-@XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Tariff", propOrder = {
-        "id",
         "payroll",
         "connectingCost"
 })
-
+@XmlSeeAlso({
+        CallingTariff.class,
+        InternetTariff.class
+})
 public class Tariff {
     @XmlAttribute(required = true)
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
@@ -21,9 +25,9 @@ public class Tariff {
     private String name;
     @XmlAttribute
     private Operator operator;
-    @XmlElement(required = true)
+    @XmlElement(namespace = "http://www.epam.com/tariffs", required = true)
     private Cost payroll;
-    @XmlElement(name = "connecting-cost", required = true)
+    @XmlElement(name = "connecting-cost", namespace = "http://www.epam.com/tariffs", required = true)
     private Cost connectingCost;
 
     public Tariff() {
@@ -54,7 +58,11 @@ public class Tariff {
     }
 
     public Operator getOperator() {
-        return operator;
+        if (operator == null) {
+            return Operator.MTS;
+        } else {
+            return operator;
+        }
     }
 
     public void setOperator(Operator operator) {
@@ -79,7 +87,8 @@ public class Tariff {
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
+        return "id='" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", operator=" + operator +
                 ", payroll=" + payroll +
                 ", connectingCost=" + connectingCost;

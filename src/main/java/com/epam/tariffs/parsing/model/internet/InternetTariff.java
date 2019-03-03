@@ -1,13 +1,10 @@
-package com.epam.tariffs.parsing.model.tariff.internet;
+package com.epam.tariffs.parsing.model.internet;
 
-import com.epam.tariffs.parsing.model.tariff.Cost;
-import com.epam.tariffs.parsing.model.tariff.Tariff;
-import com.epam.tariffs.parsing.model.tariff.Operator;
+import com.epam.tariffs.parsing.model.Cost;
+import com.epam.tariffs.parsing.model.Tariff;
+import com.epam.tariffs.parsing.model.Operator;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "InternetTariff", propOrder = {
@@ -16,11 +13,12 @@ import javax.xml.bind.annotation.XmlType;
         "speedType"
 })
 public class InternetTariff extends Tariff {
-    @XmlElement(name = "starting-number-of-MB", required = true)
+    @XmlElement(name = "starting-number-of-MB", namespace = "http://www.epam.com/tariffs", required = true)
+    @XmlSchemaType(name = "nonNegativeInteger")
     private int startingNumberOfMB;
-    @XmlElement(name = "cost-of-one-MB", required = true)
+    @XmlElement(name = "cost-of-one-MB", namespace = "http://www.epam.com/tariffs", required = true)
     private Cost costOfOneMB;
-    @XmlElement(name = "speed-type", required = true)
+    @XmlElement(name = "speed-type", namespace = "http://www.epam.com/tariffs", required = true)
     private SpeedType speedType;
 
     public InternetTariff() {

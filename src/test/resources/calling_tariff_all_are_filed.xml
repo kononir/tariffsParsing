@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.epam.com/tariffs"
+         xsi:schemaLocation="http://www.epam.com/tariffs tariffs_schema.xsd">
+
+    <calling-tariff id="AAAAAAAB" name="Пенсионный" operator="Velcom">
+        <payroll>
+            <rubles>3</rubles>
+            <kopecks>70</kopecks>
+        </payroll>
+        <connecting-cost>
+            <rubles>5</rubles>
+            <kopecks>0</kopecks>
+        </connecting-cost>
+        <call-inside-the-network>
+            <rubles>0</rubles>
+            <kopecks>5</kopecks>
+        </call-inside-the-network>
+        <call-outside-the-network>
+            <rubles>0</rubles>
+            <kopecks>17</kopecks>
+        </call-outside-the-network>
+        <call-to-favourite-number>
+            <rubles>0</rubles>
+            <kopecks>2</kopecks>
+        </call-to-favourite-number>
+        <favorite-numbers-count>5</favorite-numbers-count>
+    </calling-tariff>
+</tariffs>
+

@@ -1,0 +1,16 @@
+2019-03-03 21:34:54 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:36:21 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:36:50 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:37:24 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:55:00 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:55:16 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:56:38 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:57:33 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:59:15 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:59:35 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 21:59:53 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 22:04:49 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 22:09:19 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 22:09:19 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
+2019-03-03 22:11:02 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 22:11:02 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!

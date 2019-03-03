@@ -1,4 +1,4 @@
-package com.epam.tariffs.parsing.model.tariff.internet;
+package com.epam.tariffs.parsing.model;
 
 import com.epam.tariffs.parsing.data.parsers.interfaces.ValuableEnumeration;
 
@@ -7,16 +7,18 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlEnum
-@XmlType(name = "InternetSpeedType")
-public enum SpeedType implements ValuableEnumeration {
-    @XmlEnumValue(value = "unlimited")
-    UNLIMITED("unlimited"),
-    @XmlEnumValue(value = "limited")
-    LIMITED("limited");
+@XmlType(name = "Operator", namespace = "http://www.epam.com/tariffs")
+public enum Operator implements ValuableEnumeration {
+    @XmlEnumValue(value = "MTS")
+    MTS("mts"),
+    @XmlEnumValue(value = "Velcom")
+    VELCOM("velcom"),
+    @XmlEnumValue(value = "Life")
+    LIFE("life");
 
     private String value;
 
-    SpeedType(String value) {
+    Operator(String value) {
         this.value = value;
     }
 

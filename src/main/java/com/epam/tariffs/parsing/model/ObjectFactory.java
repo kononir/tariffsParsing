@@ -1,7 +1,7 @@
-package com.epam.tariffs.parsing.model.tariff;
+package com.epam.tariffs.parsing.model;
 
-import com.epam.tariffs.parsing.model.tariff.call.CallingTariff;
-import com.epam.tariffs.parsing.model.tariff.internet.InternetTariff;
+import com.epam.tariffs.parsing.model.call.CallingTariff;
+import com.epam.tariffs.parsing.model.internet.InternetTariff;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 
 @XmlRegistry
-public class TariffsFactory {
+public class ObjectFactory {
     private static final QName TARIFF_QNAME
             = new QName("http://www.epam.com/tariffs", "tariff");
     private static final QName CALLING_TARIFF_QNAME
@@ -17,7 +17,7 @@ public class TariffsFactory {
     private static final QName INTERNET_TARIFF_QNAME
             = new QName("http://www.epam.com/tariffs", "internet-tariff");
 
-    public TariffsFactory() {
+    public ObjectFactory() {
     }
 
     public Tariffs createTariffs() {
