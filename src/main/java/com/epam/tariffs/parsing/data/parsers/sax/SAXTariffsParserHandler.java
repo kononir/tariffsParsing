@@ -1,12 +1,12 @@
 package com.epam.tariffs.parsing.data.parsers.sax;
 
-import com.epam.tariffs.parsing.model.Cost;
+import com.epam.tariffs.parsing.model.tariff.Cost;
 import com.epam.tariffs.parsing.util.EnumSearcher;
-import com.epam.tariffs.parsing.model.Operator;
-import com.epam.tariffs.parsing.model.Tariff;
-import com.epam.tariffs.parsing.model.call.CallingTariff;
-import com.epam.tariffs.parsing.model.internet.InternetTariff;
-import com.epam.tariffs.parsing.model.internet.SpeedType;
+import com.epam.tariffs.parsing.model.tariff.Operator;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.tariff.call.CallingTariff;
+import com.epam.tariffs.parsing.model.tariff.internet.InternetTariff;
+import com.epam.tariffs.parsing.model.tariff.internet.SpeedType;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 

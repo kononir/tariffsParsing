@@ -1,6 +1,6 @@
 package com.epam.tariffs.parsing.data.parsers.sax;
 
-import com.epam.tariffs.parsing.data.parsers.interfaces.ValuableEnumeration;
+import com.epam.tariffs.parsing.util.ValuableEnumeration;
 
 public enum ElementsWithText implements ValuableEnumeration {
     FAVOURITE_NUMBERS_COUNT("favorite-numbers-count"),

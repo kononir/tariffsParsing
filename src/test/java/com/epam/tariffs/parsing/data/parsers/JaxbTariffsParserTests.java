@@ -6,7 +6,7 @@ import com.epam.tariffs.parsing.data.parsers.interfaces.Parser;
 import com.epam.tariffs.parsing.data.parsers.jaxb.JaxbTariffsParser;
 import com.epam.tariffs.parsing.data.schema.exceptions.InvalidSchemaPathException;
 import com.epam.tariffs.parsing.data.validator.exceptions.ReadingProblemsException;
-import com.epam.tariffs.parsing.model.Tariff;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
 import org.junit.Assert;
 import org.junit.Test;
 

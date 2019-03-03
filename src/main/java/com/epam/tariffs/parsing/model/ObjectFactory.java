@@ -1,7 +1,10 @@
 package com.epam.tariffs.parsing.model;
 
-import com.epam.tariffs.parsing.model.call.CallingTariff;
-import com.epam.tariffs.parsing.model.internet.InternetTariff;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.tariff.Tariffs;
+import com.epam.tariffs.parsing.model.tariff.call.CallingTariff;
+import com.epam.tariffs.parsing.model.tariff.internet.InternetTariff;
+import com.epam.tariffs.parsing.model.tariff.Cost;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;

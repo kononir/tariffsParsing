@@ -1,7 +1,7 @@
-package com.epam.tariffs.parsing.model;
+package com.epam.tariffs.parsing.model.tariff;
 
-import com.epam.tariffs.parsing.model.call.CallingTariff;
-import com.epam.tariffs.parsing.model.internet.InternetTariff;
+import com.epam.tariffs.parsing.model.tariff.call.CallingTariff;
+import com.epam.tariffs.parsing.model.tariff.internet.InternetTariff;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;

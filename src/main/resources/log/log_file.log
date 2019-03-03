@@ -14,3 +14,5 @@
 2019-03-03 22:09:19 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
 2019-03-03 22:11:02 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
 2019-03-03 22:11:02 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
+2019-03-03 22:57:00 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-03 22:57:00 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!

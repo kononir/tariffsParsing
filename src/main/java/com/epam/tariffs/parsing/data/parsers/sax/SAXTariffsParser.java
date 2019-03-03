@@ -3,7 +3,7 @@ package com.epam.tariffs.parsing.data.parsers.sax;
 import com.epam.tariffs.parsing.data.parsers.exceptions.XmlParsingException;
 import com.epam.tariffs.parsing.data.validator.exceptions.ReadingProblemsException;
 import com.epam.tariffs.parsing.data.parsers.interfaces.Parser;
-import com.epam.tariffs.parsing.model.Tariff;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;

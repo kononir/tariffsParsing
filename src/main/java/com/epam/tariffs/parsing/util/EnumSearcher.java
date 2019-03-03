@@ -1,7 +1,5 @@
 package com.epam.tariffs.parsing.util;
 
-import com.epam.tariffs.parsing.data.parsers.interfaces.ValuableEnumeration;
-
 import java.util.List;
 
 public class EnumSearcher<T extends ValuableEnumeration> {

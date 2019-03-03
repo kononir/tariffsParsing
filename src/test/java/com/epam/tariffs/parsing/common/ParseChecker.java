@@ -1,11 +1,11 @@
 package com.epam.tariffs.parsing.common;
 
-import com.epam.tariffs.parsing.model.Cost;
-import com.epam.tariffs.parsing.model.Operator;
-import com.epam.tariffs.parsing.model.Tariff;
-import com.epam.tariffs.parsing.model.call.CallingTariff;
-import com.epam.tariffs.parsing.model.internet.InternetTariff;
-import com.epam.tariffs.parsing.model.internet.SpeedType;
+import com.epam.tariffs.parsing.model.tariff.Cost;
+import com.epam.tariffs.parsing.model.tariff.Operator;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.tariff.call.CallingTariff;
+import com.epam.tariffs.parsing.model.tariff.internet.InternetTariff;
+import com.epam.tariffs.parsing.model.tariff.internet.SpeedType;
 import org.junit.Assert;
 
 import java.util.List;

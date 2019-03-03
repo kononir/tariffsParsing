@@ -8,7 +8,7 @@ import com.epam.tariffs.parsing.data.parsers.interfaces.ParserCreator;
 import com.epam.tariffs.parsing.data.schema.exceptions.InvalidSchemaPathException;
 import com.epam.tariffs.parsing.data.validator.exceptions.ReadingProblemsException;
 import com.epam.tariffs.parsing.data.validator.interfaces.XmlValidator;
-import com.epam.tariffs.parsing.model.Tariff;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
 import org.apache.log4j.Logger;
 
 import java.util.List;

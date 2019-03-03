@@ -1,6 +1,6 @@
-package com.epam.tariffs.parsing.model.internet;
+package com.epam.tariffs.parsing.model.tariff.internet;
 
-import com.epam.tariffs.parsing.data.parsers.interfaces.ValuableEnumeration;
+import com.epam.tariffs.parsing.util.ValuableEnumeration;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;

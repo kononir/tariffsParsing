@@ -1,4 +1,4 @@
-package com.epam.tariffs.parsing.data.parsers.interfaces;
+package com.epam.tariffs.parsing.util;
 
 public interface ValuableEnumeration {
     String getValue();

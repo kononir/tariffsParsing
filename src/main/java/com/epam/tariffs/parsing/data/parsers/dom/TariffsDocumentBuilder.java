@@ -1,12 +1,12 @@
 package com.epam.tariffs.parsing.data.parsers.dom;
 
-import com.epam.tariffs.parsing.model.Cost;
-import com.epam.tariffs.parsing.model.Operator;
-import com.epam.tariffs.parsing.model.call.CallingTariff;
-import com.epam.tariffs.parsing.model.internet.InternetTariff;
-import com.epam.tariffs.parsing.model.internet.SpeedType;
+import com.epam.tariffs.parsing.model.tariff.Cost;
+import com.epam.tariffs.parsing.model.tariff.Operator;
+import com.epam.tariffs.parsing.model.tariff.call.CallingTariff;
+import com.epam.tariffs.parsing.model.tariff.internet.InternetTariff;
+import com.epam.tariffs.parsing.model.tariff.internet.SpeedType;
 import com.epam.tariffs.parsing.util.EnumSearcher;
-import com.epam.tariffs.parsing.model.Tariff;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;

@@ -12,10 +12,10 @@ import com.epam.tariffs.parsing.data.schema.exceptions.InvalidSchemaPathExceptio
 import com.epam.tariffs.parsing.data.validator.XmlValidatorImpl;
 import com.epam.tariffs.parsing.data.validator.exceptions.ReadingProblemsException;
 import com.epam.tariffs.parsing.data.validator.interfaces.XmlValidator;
-import com.epam.tariffs.parsing.model.Cost;
-import com.epam.tariffs.parsing.model.Operator;
-import com.epam.tariffs.parsing.model.Tariff;
-import com.epam.tariffs.parsing.model.call.CallingTariff;
+import com.epam.tariffs.parsing.model.tariff.Cost;
+import com.epam.tariffs.parsing.model.tariff.Operator;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.tariff.call.CallingTariff;
 import org.junit.Assert;
 import org.junit.Test;
 

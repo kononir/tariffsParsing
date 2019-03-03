@@ -1,8 +1,8 @@
-package com.epam.tariffs.parsing.model.internet;
+package com.epam.tariffs.parsing.model.tariff.internet;
 
-import com.epam.tariffs.parsing.model.Cost;
-import com.epam.tariffs.parsing.model.Tariff;
-import com.epam.tariffs.parsing.model.Operator;
+import com.epam.tariffs.parsing.model.tariff.Cost;
+import com.epam.tariffs.parsing.model.tariff.Tariff;
+import com.epam.tariffs.parsing.model.tariff.Operator;
 
 import javax.xml.bind.annotation.*;
 

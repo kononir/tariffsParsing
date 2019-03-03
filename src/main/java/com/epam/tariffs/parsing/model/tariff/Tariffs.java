@@ -1,4 +1,4 @@
-package com.epam.tariffs.parsing.model;
+package com.epam.tariffs.parsing.model.tariff;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.*;
