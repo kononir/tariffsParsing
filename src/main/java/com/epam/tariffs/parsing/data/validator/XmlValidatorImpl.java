@@ -31,6 +31,7 @@ public class XmlValidatorImpl implements XmlValidator {
             Validator validator = schema.newValidator();
 
             Source source = new StreamSource(filePath);
+            validator.setErrorHandler(new TariffsXmlErrorHandler());
             validator.validate(source);
 
             answer = true;

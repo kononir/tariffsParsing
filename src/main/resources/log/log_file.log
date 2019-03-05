@@ -16,3 +16,25 @@
 2019-03-03 22:11:02 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
 2019-03-03 22:57:00 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
 2019-03-03 22:57:00 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
+2019-03-04 12:11:41 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-04 12:11:41 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
+2019-03-05 14:12:45 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-05 14:12:45 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
+2019-03-05 14:14:15 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-05 14:14:15 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
+2019-03-05 16:12:00 ERROR xmlErrorLogger:20 - 7 : 14-cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:15:27 ERROR xmlErrorLogger:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:19:13 ERROR xmlErrorLogger:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:23:08 ERROR xmlErrorLogger:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:29:16 ERROR xml_file:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:33:01 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:39:41 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:40:09 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:41:17 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:41:43 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:41:58 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:42:16 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:48:23 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:48:40 ERROR TariffsXmlErrorHandler:20 - Line: 7, Column: 14 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'invalid'. One of '{"http://www.epam.com/tariffs":tariff}' is expected.
+2019-03-05 16:52:15 ERROR Director:41 - com.epam.tariffs.parsing.data.parsers.exceptions.InvalidParserNameException: Invalid parser name!
+2019-03-05 16:52:15 ERROR Director:41 - com.epam.tariffs.parsing.InvalidFileToParsingException: This file is invalid!
